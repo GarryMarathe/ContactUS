@@ -8,7 +8,7 @@ const Form = () => {
      <input type="email" name="email" id="" placeholder='example@gmail.com'/>
      <input type="phone" name="phone" id="" placeholder='+91'/>
 
-     <textarea name="message" id="" cols="30" rows="10" placeholder='type here....'/>
+     <textarea name="message" id="" cols="40" rows="20" placeholder='type here....'/>
 
      <button type="submit">Send</button>
     </form>
