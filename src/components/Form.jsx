@@ -1,6 +1,10 @@
 import React from 'react'
+import './Form.css'
+import { useState } from 'react'
 
 const Form = () => {
+
+    const [data, setName] = useState({name: "", email: "", phone: "", message: ""})
   return (
     <form>
      <h1>Contact <span>Here</span></h1> 
