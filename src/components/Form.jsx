@@ -17,15 +17,13 @@ const Form = () => {
 
     const toEmail = "gauravmarathe6468@gmail.com";
     const subject = encodeURIComponent("User Inquiry");
-    const body = encodeURIComponent(`Message: ${data.message}`);
-
-    const mailtoLink = `mailto:${toEmail}?subject=${subject}&body=${body}`;
-
-    window.location.href = mailtoLink;
+    const body = encodeURIComponent(`${data.message}`);
+  
+    window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${toEmail}&su=${subject}&body=${body}&tf=cm`, "_blank");
 
 
   }
-  
+
   return (
 
     <div className="contact-container">
@@ -34,7 +32,7 @@ const Form = () => {
       </div>
 
       <div className="contact-form">
-        <form method='post' onSubmit={handleSubmit} dataform>
+        <form onSubmit={handleSubmit} dataform>
           <h1>Contact <span>Here</span></h1>
           <input type="text" name="name" id="" onChange={handleChange} value={data.name} placeholder='Enter name' required/>
           <input type="email" name="email" id="" onChange={handleChange} value={data.email} placeholder='example@gmail.com' required />
