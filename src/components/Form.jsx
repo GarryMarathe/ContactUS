@@ -4,7 +4,15 @@ import { useState } from 'react'
 
 const Form = () => {
 
-    const [data, setName] = useState({name: "", email: "", phone: "", message: ""})
+    const [data, setName] = useState({name: "", email: "", phone: "", message: ""});
+    const handleChange = () => {
+
+    }
+
+    const handleSubmit = () => {
+
+
+    }
   return (
     <form>
      <h1>Contact <span>Here</span></h1> 
