@@ -14,7 +14,7 @@ const Form = () => {
 
     }
   return (
-    <form>
+    <form method='post' onSubmit={handleSubmit}>
      <h1>Contact <span>Here</span></h1> 
      <input type="text" name="name" id="" placeholder='Enter name'/>
      <input type="email" name="email" id="" placeholder='example@gmail.com'/>
