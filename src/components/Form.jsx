@@ -16,7 +16,7 @@ const Form = () => {
   const handleSubmit = () => {
 
     const toEmail = "gauravmarathe6468@gmail.com";
-    const subject = encodeURIComponent("User Inquiry");
+    const subject = encodeURIComponent(data.subject || "User Inquiry");
     const body = encodeURIComponent(`${data.message}`);
   
     window.open(`https://mail.google.com/mail/u/0/?fs=1&to=${toEmail}&su=${subject}&body=${body}&tf=cm`, "_blank");
@@ -32,11 +32,12 @@ const Form = () => {
       </div>
 
       <div className="contact-form">
-        <form onSubmit={handleSubmit} dataform>
+        <form onSubmit={handleSubmit} className='form'>
           <h1>Contact <span>Here</span></h1>
           <input type="text" name="name" id="" onChange={handleChange} value={data.name} placeholder='Enter name' required/>
           <input type="email" name="email" id="" onChange={handleChange} value={data.email} placeholder='example@gmail.com' required />
           <input type="phone" name="phone" id="" onChange={handleChange} value={data.phone} placeholder='+91' required/>
+          <input type="text" name="subject" onChange={handleChange} value={data.subject} placeholder='Enter subject' required/>
 
           <textarea name="message" id="" cols="30" rows="10" onChange={handleChange} value={data.message} placeholder='type here....' required/>
 
