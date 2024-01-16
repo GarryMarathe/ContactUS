@@ -25,18 +25,41 @@ body {
 
 .contact-column {
     display: flex;
+
     flex-direction: row;
     align-items: center;
+   
+
     
 }
 
+
+
+.animation-column img{
+    
+    width: 70%;
+}
+
+.animation-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+
+
 .contact-form {
+    display: flex;
+    flex-direction: column;
     display: block;
     background-color: #fff;
     box-shadow: 1px 1px 3px 2px #ddd;
-    margin: 20px auto;
+    margin: 20px;
     width: 50%;
     padding: 20px;
+    
 }
 
 .contact-form h1{
