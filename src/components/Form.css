@@ -23,6 +23,13 @@ body {
     color: rgb(29, 185, 237);
 }
 
+.contact-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
 .contact-form {
     display: block;
     background-color: #fff;
@@ -36,6 +43,7 @@ body {
 
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 form input,
@@ -47,6 +55,8 @@ textarea {
     background-color: #f1f1f1;
     border: 1px solid #ddd;
 }
+
+
 
 form span {
     color: orangered;

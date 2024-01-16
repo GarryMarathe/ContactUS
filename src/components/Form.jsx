@@ -13,7 +13,9 @@ const Form = () => {
 
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+
+    
 
     const toEmail = "gauravmarathe6468@gmail.com";
     const subject = encodeURIComponent(data.subject || "User Inquiry");
@@ -31,6 +33,12 @@ const Form = () => {
         <h1>Contact Me</h1>
       </div>
 
+      <div className="contact-column">
+      <div className="animation-column">
+        {/* Add your animation GIF or content here */}
+        <img src="/logos/contact.gif" alt="Animation" />
+      </div>
+
       <div className="contact-form">
         <form onSubmit={handleSubmit} className='form'>
           <h1>Contact <span>Here</span></h1>
@@ -39,10 +47,12 @@ const Form = () => {
           <input type="phone" name="phone" id="" onChange={handleChange} value={data.phone} placeholder='+91' required/>
           <input type="text" name="subject" onChange={handleChange} value={data.subject} placeholder='Enter subject' required/>
 
-          <textarea name="message" id="" cols="30" rows="10" onChange={handleChange} value={data.message} placeholder='type here....' required/>
+          <textarea name="message" id="" cols="30" rows="5" onChange={handleChange} value={data.message} placeholder='type here....' required/>
 
           <button type="submit">Send</button>
         </form>
+
+      </div>
 
       </div>
     </div>
