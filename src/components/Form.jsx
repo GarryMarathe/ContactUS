@@ -36,7 +36,7 @@ const Form = () => {
       <div className="contact-column">
       <div className="animation-column">
         {/* Add your animation GIF or content here */}
-        <img src="/logos/contact.gif" alt="Animation" />
+        <img src="/icons/contact.gif" alt="Animation" />
       </div>
 
       <div className="contact-form">
