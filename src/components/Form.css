@@ -20,15 +20,22 @@ body {
 
 .contact-heading {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: white;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .contact-heading span {
     color: orangered;
 }
 
+.contact-heading img{
+    width: 50px;
+    margin-right: 10px;
+    
+}
 .contact-column {
     display: flex;
 
@@ -40,18 +47,18 @@ body {
 }
 
 
-
-.animation-column img{
-    
-    width: 70%;
-}
-
 .animation-column{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
+}
+
+
+.animation-column img{
+    
+    width: 80%;
+    
 }
  
 
@@ -60,31 +67,33 @@ body {
     display: flex;
     flex-direction: column;
     display: block;
-    background-color: #000000;
-    /* box-shadow: 1px 1px 3px 2px #ddd; */
-    margin: 20px;
-    width: 50%;
-    padding: 20px;
+    width: 70%;
+    margin-right: 150px;
     
 }
 
-.contact-form h1{
+.contact-form h3{
 
     display: flex;
     justify-content: start;
-    margin-top: 0px;
-    font-family: 'Poppins', sans-serif;
+    /* margin-top: 0px; */
+    font-family: 'Montserrat',sans-serif;
+    
     color: #fff;
+    font-size: 22px;
+    margin-left: 15px;
+    
 }
 
 form input,
 textarea {
     width: 100%;
-    margin: 15px auto;
+    margin: 15px;
     padding: 10px;
     font-family: "Poppins";
-    background-color: #000000;
+    /* background-color: #000000; */
     border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 
@@ -94,11 +103,21 @@ form span {
 }
 
 form button {
-    height: 30px;
-    width: 80px;
+    height: 40px;
+    width: 104%;
+    margin-left: 15px;
     align-items: center;
-    border: none;
-    background-color: rgb(29, 185, 237);
-    color: #fff;
+    border: 2px solid #444444;
+    border-radius: 5px;
+    background-color: #222222;
+    color: orangered;
     cursor: pointer;
+    font-size: 18px;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+
+form button:hover {
+    background-color: orangered;
+    color: #fff;
 }
