@@ -28,20 +28,21 @@ const Form = () => {
 
   return (
 
-    <div className="contact-container">
+    <div className="contact-container" id='contact'>
       <div className="contact-heading">
-        <h1>Contact Me</h1>
+        <img src="/icons/chat.png" alt="Contact Icon" />
+        <h1>Contact <span>Me</span></h1>
       </div>
 
       <div className="contact-column">
       <div className="animation-column">
         {/* Add your animation GIF or content here */}
-        <img src="/icons/contact.gif" alt="Animation" />
+        <img src="/logos/contact.gif" alt="Animation" />
       </div>
 
       <div className="contact-form">
         <form onSubmit={handleSubmit} className='form'>
-          <h1>Contact Here</h1>
+          <h3>Lets Connect</h3>
           <input type="text" name="name" id="" onChange={handleChange} value={data.name} placeholder='Enter name' required/>
           <input type="email" name="email" id="" onChange={handleChange} value={data.email} placeholder='example@gmail.com' required />
           <input type="phone" name="phone" id="" onChange={handleChange} value={data.phone} placeholder='+91' required/>
@@ -49,7 +50,7 @@ const Form = () => {
 
           <textarea name="message" id="" cols="30" rows="5" onChange={handleChange} value={data.message} placeholder='type here....' required/>
 
-          <button type="submit">Send</button>
+          <button type="submit">Send Message</button>
         </form>
 
       </div>
